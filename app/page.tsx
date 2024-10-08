@@ -24,32 +24,14 @@ export default function Home() {
           priority
         />
       </div>
-      {/* <div className="content">
-        <h1>Header One</h1>
-        <h2>Header Two</h2>
-        <h3>Header Three</h3>
-        <h4>Header Four</h4>
-        <h5>Header Five</h5>
-        <h6>Header Six</h6>
-        <div></div>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor ultrices nisl, id
-          tincidunt nunc. Sed euismod, nunc id aliquet ullamcorper, odio nisl ultrices nunc, a
-          aliquam nunc nisl id nunc. Vestibulum ante ipsum primis in faucibus orci luctus et
-          ultrices posuere cubilia curae; Sed vitae nunc auctor, lacinia nunc sed, ultrices nunc.
-          Sed auctor, nunc id aliquet ullamcorper, odio nisl ultrices nunc, a aliquam nunc nisl id
-          nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-          curae; Sed vitae nunc auctor, lacinia nunc sed, ultrices nunc.
-        </p>
-      </div> */}
-      <div className="w-full bg-[url('../images/ccbp-banner.png')] bg-no-repeat bg-cover md:px-8 md:py-4 text-white bg-center p-4">
+      <div className="w-full bg-[url('../images/ccbp-banner.png')] bg-no-repeat bg-cover md:px-12 md:py-4 text-white bg-center p-4">
         <div className="grid lg:grid-cols-2 grid-cols-1 gap-8 items-center">
           <div className="flex flex-col gap-2">
             <h1>Save the Date!</h1>
-            <p>
+            <div>
               The festivities of the CCBP shindig kick off bright and early on Nov 2, 2024 at 10am.
               Boy, oh boy, we&apos;re just bursting with excitement to have you there!
-            </p>
+            </div>
           </div>
 
           <div className="lg:hidden block items-center justify-self-center bg-white p-8 rounded-sm bg-opacity-75">
@@ -83,7 +65,13 @@ export default function Home() {
         </div>
       </div>
       <div>
-        <Image src={roLogo} alt="Comic Creators Block Party" width={800} height={450} />
+        <Image
+          src={roLogo}
+          alt="Comic Creators Block Party"
+          width={800}
+          height={450}
+          sizes="100vw"
+        />
       </div>
       <div className="content flex flex-col gap-8">
         <p>
