@@ -15,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${roboto_init.className} ${anton_init.variable} antialiased`}>
-        <div className="m-8">{children}</div>
+        <div>{children}</div>
       </body>
     </html>
   )

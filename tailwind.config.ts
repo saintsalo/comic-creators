@@ -8,6 +8,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        "hero-pattern": "url('../images/ccbp-banner.png')",
+        "footer-texture": "url('/images/footer-texture.png')",
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
