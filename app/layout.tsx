@@ -26,7 +26,9 @@ export default function RootLayout({
           src={`//static.klaviyo.com/onsite/js/klaviyo.js?company_id=ULWpL7`}
           async
         />
-        <div>{children}</div>
+        <div className="bg-[url('../images/background-footer.png')] bg-no-repeat bg-bottom ">
+          {children}
+        </div>
       </body>
     </html>
   )

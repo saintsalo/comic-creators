@@ -5,10 +5,11 @@ import creatorsImage from "@/images/creatorsList.png"
 import Creators from "@/components/Creators"
 import Newsletter from "@/components/Newsletter"
 import SaveDate from "@/components/SaveDate"
+import CCBP2023 from "@/components/CCBP2023"
 
 export default function Home() {
   return (
-    <div className="grid md:min-h-screen justify-items-center m-auto max-w-[1600px] transition gap-8">
+    <div className="grid md:min-h-screen justify-items-center m-auto max-w-[1600px] transition gap-8 pb-[350px]">
       <div className="">
         <Image
           src={ccbpLogo}
@@ -30,6 +31,7 @@ export default function Home() {
       <div className="content flex flex-col gap-8">
         <Newsletter />
       </div>
+      <CCBP2023 />
       <div className="max-w-7xl">
         <Image
           src={creatorsImage}

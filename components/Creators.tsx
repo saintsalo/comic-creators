@@ -185,11 +185,11 @@ export const creators: Creator[] = [
     image: pichetshote,
     url: "https://www.revengeof.com/pages/creator/pornsak-pichetshote",
   },
-  {
-    name: "Sabir Pirzada",
-    image: pirzada,
-    url: "https://www.revengeof.com/pages/creator/sabir-pirzada",
-  },
+  // {
+  //   name: "Sabir Pirzada",
+  //   image: pirzada,
+  //   url: "https://www.revengeof.com/pages/creator/sabir-pirzada",
+  // },
   {
     name: "Brian Posehn",
     image: posehn,

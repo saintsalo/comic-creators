@@ -8,7 +8,7 @@ import timezone from "dayjs/plugin/timezone"
 dayjs.extend(utc)
 dayjs.extend(timezone)
 const SaveDate = () => {
-  const targetDate = dayjs.tz("2024-11-02 10:00", "America/Los_Angeles")
+  const targetDate = dayjs.tz("2024-11-02 11:00", "America/Los_Angeles")
   const timestamp = targetDate.valueOf()
   return (
     <div className="w-full">
@@ -32,21 +32,21 @@ const SaveDate = () => {
               className="md:hidden"
             />
             <div className="font-extrabold md:text-lg leading-6">
-              The festivities of the CCBP shindig kick off bright and early on Nov 2, 2024 at 10am.
+              The festivities of the CCBP shindig kick off bright and early on Nov 2, 2024 at 11am.
               Boy, oh boy, we&apos;re just bursting with excitement to have you there!
             </div>
           </div>
 
-          <div className="lg:hidden block items-center justify-self-center bg-white p-2 rounded-sm bg-opacity-75">
+          <div className="lg:hidden block items-center justify-self-center  p-2 rounded-sm bg-opacity-75">
             <Flip
               labelStyle={{
-                fontSize: 10,
+                fontSize: 6,
                 fontWeight: 500,
                 textTransform: "uppercase",
                 color: "black",
               }}
               digitBlockStyle={{
-                width: 20,
+                width: 16,
                 height: 30,
                 fontSize: 22,
                 borderRadius: 3,
@@ -54,7 +54,7 @@ const SaveDate = () => {
               to={timestamp}
             />
           </div>
-          <div className="lg:block hidden items-center justify-self-center bg-white p-2 rounded-sm bg-opacity-75">
+          <div className="lg:block hidden items-center justify-self-center  p-2 rounded-sm bg-opacity-75">
             <Flip
               labelStyle={{
                 fontSize: 10,
@@ -63,7 +63,7 @@ const SaveDate = () => {
                 color: "black",
               }}
               digitBlockStyle={{
-                width: 30,
+                width: 21,
                 height: 45,
                 fontSize: 22,
                 borderRadius: 3,
