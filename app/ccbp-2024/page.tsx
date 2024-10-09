@@ -30,11 +30,11 @@ export default function Home() {
           sizes="100vw"
         />
       </div>
-      <div className="content flex flex-col gap-8">
-        <Newsletter />
-      </div>
       <div className="content w-full">
         <CCBP2024Content />
+      </div>
+      <div className="content flex flex-col gap-8">
+        <Newsletter />
       </div>
       <CCBP2023 />
       <div className="max-w-7xl">
