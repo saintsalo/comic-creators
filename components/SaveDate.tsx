@@ -31,7 +31,7 @@ const SaveDate = () => {
               sizes="100vw"
               className="md:hidden"
             />
-            <div className="font-extrabold md:text-lg leading-6">
+            <div className="font-extrabold">
               The festivities of the CCBP shindig kick off bright and early on Nov 2, 2024 at 11am.
               Boy, oh boy, we&apos;re just bursting with excitement to have you there!
             </div>
