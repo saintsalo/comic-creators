@@ -1,7 +1,7 @@
 export default function CCBP2024Content() {
   return (
     <div className="flex flex-col gap-8 w-full">
-      <h1>Revenge Of Presents: Comic Creators Block Party With Patton & Jordan</h1>
+      <h1>Revenge Of Presents: Comic Creators Block Party 2024 With Patton & Jordan</h1>
       <div>
         Get ready for the{" "}
         <span className="font-extrabold">ultimate comic creator event of 2024</span>! The{" "}
