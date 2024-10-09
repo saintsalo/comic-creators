@@ -45,8 +45,8 @@ export default function Home() {
           sizes="100vw"
         />
       </div>
-      <Creators />
       <CCBP2023 />
+      <Creators />
     </div>
   )
 }
