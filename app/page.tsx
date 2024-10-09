@@ -7,6 +7,8 @@ import dayjs from "dayjs"
 import utc from "dayjs/plugin/utc"
 import timezone from "dayjs/plugin/timezone"
 import Creators from "@/components/Creators"
+import std from "@/images/save-the-date.png"
+import Newsletter from "@/components/Newsletter"
 
 dayjs.extend(utc)
 dayjs.extend(timezone)
@@ -24,17 +26,49 @@ export default function Home() {
           priority
         />
       </div>
-      <div className="w-full bg-[url('../images/ccbp-banner.png')] bg-no-repeat bg-cover md:px-12 md:py-4 text-white bg-center p-4">
+      <div className="w-full bg-[url('../images/background-orange.png')] bg-cover md:px-12 md:py-4 text-[#A20035] bg-left  border-[#A20035] md:border-[10px] md:rounded-[35px] rounded-md p-4">
         <div className="grid lg:grid-cols-2 grid-cols-1 gap-8 items-center">
-          <div className="flex flex-col gap-2">
-            <h1>Save the Date!</h1>
-            <div>
+          <div className="flex flex-col gap-4">
+            <Image
+              src={std}
+              alt="Save the Date"
+              width={300}
+              height={100}
+              sizes="100vw"
+              className="hidden md:block"
+            />
+            <Image
+              src={std}
+              alt="Save the Date"
+              width={200}
+              height={75}
+              sizes="100vw"
+              className="md:hidden"
+            />
+            <div className="font-extrabold md:text-lg leading-6">
               The festivities of the CCBP shindig kick off bright and early on Nov 2, 2024 at 10am.
               Boy, oh boy, we&apos;re just bursting with excitement to have you there!
             </div>
           </div>
 
-          <div className="lg:hidden block items-center justify-self-center bg-white p-8 rounded-sm bg-opacity-75">
+          <div className="lg:hidden block items-center justify-self-center bg-white p-2 rounded-sm bg-opacity-75">
+            <Flip
+              labelStyle={{
+                fontSize: 10,
+                fontWeight: 500,
+                textTransform: "uppercase",
+                color: "black",
+              }}
+              digitBlockStyle={{
+                width: 20,
+                height: 30,
+                fontSize: 22,
+                borderRadius: 3,
+              }}
+              to={timestamp}
+            />
+          </div>
+          <div className="lg:block hidden items-center justify-self-center bg-white p-2 rounded-sm bg-opacity-75">
             <Flip
               labelStyle={{
                 fontSize: 10,
@@ -51,17 +85,6 @@ export default function Home() {
               to={timestamp}
             />
           </div>
-          <div className="lg:block hidden items-center justify-self-center bg-white p-8 rounded-sm bg-opacity-75">
-            <Flip
-              labelStyle={{
-                fontSize: 10,
-                fontWeight: 500,
-                textTransform: "uppercase",
-                color: "black",
-              }}
-              to={timestamp}
-            />
-          </div>
         </div>
       </div>
       <div>
@@ -74,30 +97,7 @@ export default function Home() {
         />
       </div>
       <div className="content flex flex-col gap-8">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor ultrices nisl, id
-          tincidunt nunc. Sed euismod, nunc id aliquet ullamcorper, odio nisl ultrices nunc, a
-          aliquam nunc nisl id nunc. Vestibulum ante ipsum primis in faucibus orci luctus et
-          ultrices posuere cubilia curae; Sed vitae nunc auctor, lacinia nunc sed, ultrices nunc.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor ultrices nisl, id
-          tincidunt nunc. Sed euismod, nunc id aliquet ullamcorper, odio nisl ultrices nunc, a
-          aliquam nunc nisl id nunc. Vestibulum ante ipsum primis in faucibus orci luctus et
-          ultrices posuere cubilia curae; Sed vitae nunc auctor, lacinia nunc sed, ultrices nunc.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor ultrices nisl, id
-          tincidunt nunc. Sed euismod, nunc id aliquet ullamcorper, odio nisl ultrices nunc, a
-          aliquam nunc nisl id nunc. Vestibulum ante ipsum primis in faucibus orci luctus et
-          ultrices posuere cubilia curae; Sed vitae nunc auctor, lacinia nunc sed, ultrices nunc.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor ultrices nisl, id
-          tincidunt nunc. Sed euismod, nunc id aliquet ullamcorper, odio nisl ultrices nunc, a
-          aliquam nunc nisl id nunc. Vestibulum ante ipsum primis in faucibus orci luctus et
-          ultrices posuere cubilia curae; Sed vitae nunc auctor, lacinia nunc sed, ultrices nunc.
-        </p>
+        <Newsletter />
       </div>
       <div className="max-w-7xl">
         <Image
@@ -105,7 +105,7 @@ export default function Home() {
           alt="Comic Creators Block Party Creators List"
           width={1600}
           height={1600}
-          // style={{ objectFit: "contain", width: "120%", height: "auto" }}
+          sizes="100vw"
         />
       </div>
       <Creators />

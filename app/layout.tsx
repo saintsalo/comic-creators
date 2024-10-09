@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import { anton_init, roboto_init } from "@/fonts"
 import "./globals.css"
+import Script from "next/script"
 
 export const metadata: Metadata = {
   title: "Comic Creators Block Party",
@@ -19,6 +20,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${roboto_init.className} ${anton_init.variable} antialiased`}>
+        <Script
+          id="klaviyo"
+          type="text/javascript"
+          src={`//static.klaviyo.com/onsite/js/klaviyo.js?company_id=ULWpL7`}
+          async
+        />
         <div>{children}</div>
       </body>
     </html>

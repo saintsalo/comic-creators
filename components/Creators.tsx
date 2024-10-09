@@ -68,7 +68,7 @@ export const creators: Creator[] = [
   {
     name: "Rodney Barnes",
     image: barnes,
-    url: "https://www.revengeof.com/pages/creator/rodney-barnes",
+    // url: "https://www.revengeof.com/pages/creator/rodney-barnes",
   },
   {
     name: "Brian Michael Bendis",
@@ -83,7 +83,7 @@ export const creators: Creator[] = [
   {
     name: "Ryan Browne",
     image: browne,
-    url: "https://www.revengeof.com/pages/creator/ryan-browne",
+    // url: "https://www.revengeof.com/pages/creator/ryan-browne",
   },
   {
     name: "Heath Corson",
@@ -257,51 +257,12 @@ export default function Creators() {
         {cohosts.map(cohost => (
           <CreatorItem key={cohost.name} {...cohost} />
         ))}
-        {/* <div className="col-span-2 aspect-video">
-          <Image
-            src={patton}
-            alt={`Creator and Co-Host: Patton Oswalt`}
-            sizes="100vw"
-            style={{
-              width: "100%",
-              height: "auto",
-            }}
-          />
-        </div>
-        <div className="col-span-2 aspect-video">
-          <Image
-            src={blum}
-            alt={`Creator and Co-Host: Jordan Blum`}
-            sizes="100vw"
-            style={{
-              width: "100%",
-              height: "auto",
-            }}
-          />
-        </div> */}
       </div>
       <h4 className="creator-header text-center my-8">Creators</h4>
       <div className="grid md:grid-cols-4 grid-cols-2 md:gap-4 transition-all">
         {creators.map(creator => (
           <CreatorItem key={creator.name} {...creator} />
         ))}
-        {/* <div className="aspect-square relative border-[#93193A] md:border-8 hover:scale-105 transition duration-700 opacity-95 rounded-sm hover:opacity-100">
-          <Image
-            src="https://www.revengeof.com/cdn/shop/files/LP7xB9ee_400x400_702b9652-762b-4a2d-ad62-4fa6be9fba9c_400x400.jpg?v=1697863546"
-            alt="Comic Creators Block Party"
-            fill
-          />
-          <div className="absolute flex bottom-0 m-4">
-            <h2 className="creator-header">Danh Nyugen</h2>
-          </div>
-        </div>
-        <div className="bg-green-400 aspect-square">Creator</div>
-        <div className="bg-green-400 aspect-square">Creator</div>
-        <div className="bg-green-400 aspect-square">Creator</div>
-        <div className="bg-green-400 aspect-square">Creator</div>
-        <div className="bg-green-400 aspect-square">Creator</div>
-        <div className="bg-green-400 aspect-square">Creator</div>
-        <div className="bg-green-400 aspect-square">Creator</div> */}
       </div>
     </div>
   )
