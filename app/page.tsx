@@ -1,7 +1,7 @@
 import Image from "next/image"
-import ccbpLogo from "../images/comic-creators-logo.png"
+import ccbpLogo from "../images/CCBP_LogoGraphic-full.png"
 import roLogo from "../images/revenge-of-logo.png"
-import creatorsImage from "../images/TEMP-creators.png"
+import creatorsImage from "../images/creatorsList.png"
 import Flip from "@/components/Flip"
 import dayjs from "dayjs"
 import utc from "dayjs/plugin/utc"
@@ -16,7 +16,7 @@ export default function Home() {
   const timestamp = targetDate.valueOf()
   return (
     <div className="grid md:min-h-screen justify-items-center m-auto max-w-[1600px] transition gap-8">
-      <div className="xl:-mt-[275px] lg:-mt-[175px] md:-mt-[100px] -mt-16">
+      <div className="">
         <Image
           src={ccbpLogo}
           alt="Comic Creators Block Party"

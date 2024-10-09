@@ -1,27 +1,63 @@
 "use client"
 import Image, { StaticImageData } from "next/image"
-import logo from "../images/comic-creators-logo.png"
-import kibblesmith from "../images/creators/CCBP_CreatorImage_DanielKibblesmith.jpg"
 import avallone from "../images/creators/CCBP_CreatorImage_DavidAvallone.jpg"
-import pepose from "../images/creators/CCBP_CreatorImage_DavidPepose.jpg"
-import luce from "../images/creators/CCBP_CreatorImage_EdLuce.jpg"
-import duggan from "../images/creators/CCBP_CreatorImage_GerryDuggan.jpg"
-import may from "../images/creators/CCBP_CreatorImage_HannahRoseMay.jpg"
-import heath from "../images/creators/CCBP_CreatorImage_HeathCorson.jpg"
-import foster from "../images/creators/CCBP_CreatorImage_JackFoster.jpg"
-import lanzing from "../images/creators/CCBP_CreatorImage_JacksonLanzing.jpg"
-import houser from "../images/creators/CCBP_CreatorImage_JodyHouser.jpg"
+import barnes from "../images/creators/CCBP_CreatorImage_RodneyBarnes.jpg"
+import bendis from "../images/creators/CCBP_CreatorImage_BrianMichaelBendis.jpg"
 import bernardin from "../images/creators/CCBP_CreatorImage_MarcBernardin.jpg"
-import remender from "../images/creators/CCBP_CreatorImage_RickRemender.jpg"
+import blum from "../images/creators/CCBP_CoHostImage_JordanBlum.jpg"
+import browne from "../images/creators/CCBP_CreatorImage_RyanBrowne.jpg"
+import dastmalchian from "../images/creators/CCBP_CreatorImage_DavidDastmalchian.jpg"
+import dini from "../images/creators/CCBP_CreatorImage_PaulDini.jpg"
+import duggan from "../images/creators/CCBP_CreatorImage_GerryDuggan.jpg"
+import foster from "../images/creators/CCBP_CreatorImage_JackFoster.jpg"
+import gad from "../images/creators/CCBP_CreatorImage_JoshGad.jpg"
+import heath from "../images/creators/CCBP_CreatorImage_HeathCorson.jpg"
+import horvath from "../images/creators/CCBP_CreatorImage_PatrickHorvath.jpg"
+import houser from "../images/creators/CCBP_CreatorImage_JodyHouser.jpg"
+import johns from "../images/creators/CCBP_CreatorImage_GeoffJohns.jpg"
+import kaplan from "../images/creators/CCBP_CreatorImage_ZachKaplan.jpg"
+import kibblesmith from "../images/creators/CCBP_CreatorImage_DanielKibblesmith.jpg"
 import koblish from "../images/creators/CCBP_CreatorImage_ScottKoblish.jpg"
+import kurtzman from "../images/creators/CCBP_CreatorImage_AlexKurtzman.jpg"
+import lanzing from "../images/creators/CCBP_CreatorImage_JacksonLanzing.jpg"
+import luce from "../images/creators/CCBP_CreatorImage_EdLuce.jpg"
+import maines from "../images/creators/CCBP_CreatorImage_NicoleMaines.jpg"
+import may from "../images/creators/CCBP_CreatorImage_HannahRoseMay.jpg"
+import ogle from "../images/creators/CCBP_CreatorImage_RexOgle.jpg"
+import oswalt from "../images/creators/CCBP_CoHostImage_PattonOswalt.jpg"
+import pepose from "../images/creators/CCBP_CreatorImage_DavidPepose.jpg"
+import pichetshote from "../images/creators/CCBP_CreatorImage_PornsakPichetshote.jpg"
+import pirzada from "../images/creators/CCBP_CreatorImage_SabirPirzada.jpg"
+import posehn from "../images/creators/CCBP_CreatorImage_BrianPosehn.jpg"
+import remender from "../images/creators/CCBP_CreatorImage_RickRemender.jpg"
+import ryan from "../images/creators/CCBP_CreatorImage_JohnnyRyan.jpg"
 import sheridan from "../images/creators/CCBP_CreatorImage_TimSheridan.jpg"
+import tejaratchi from "../images/creators/CCBP_CreatorImage_SeanTejaratchi.jpg"
+import waid from "../images/creators/CCBP_CreatorImage_MarkWaid.jpg"
+
 import clsx from "clsx"
 
 interface Creator {
   name: string
   image: StaticImageData
   url?: string
+  cohost?: boolean
 }
+
+export const cohosts: Creator[] = [
+  {
+    name: "Patton Oswalt",
+    image: oswalt,
+    url: "https://www.revengeof.com/pages/creator/patton-oswalt",
+    cohost: true,
+  },
+  {
+    name: "Jordan Blum",
+    image: blum,
+    url: "https://www.revengeof.com/pages/creator/jordan-blum",
+    cohost: true,
+  },
+]
 
 export const creators: Creator[] = [
   {
@@ -30,14 +66,39 @@ export const creators: Creator[] = [
     url: "https://www.revengeof.com/pages/creator/david-avallone",
   },
   {
+    name: "Rodney Barnes",
+    image: barnes,
+    url: "https://www.revengeof.com/pages/creator/rodney-barnes",
+  },
+  {
+    name: "Brian Michael Bendis",
+    image: bendis,
+    // url: "https://www.revengeof.com/pages/creator/brian-michael-bendis",
+  },
+  {
     name: "Marc Bernardin",
     image: bernardin,
     url: "https://www.revengeof.com/pages/creator/marc-bernardin",
   },
   {
+    name: "Ryan Browne",
+    image: browne,
+    url: "https://www.revengeof.com/pages/creator/ryan-browne",
+  },
+  {
     name: "Heath Corson",
     image: heath,
     url: "https://www.revengeof.com/pages/creator/heath-corson",
+  },
+  {
+    name: "David Dastmalchian",
+    image: dastmalchian,
+    url: "https://www.revengeof.com/pages/creator/david-dastmalchian",
+  },
+  {
+    name: "Oaul Dini",
+    image: dini,
+    // url: "https://www.revengeof.com/pages/creator/paul-dini",
   },
   {
     name: "Gerry Duggan",
@@ -47,11 +108,32 @@ export const creators: Creator[] = [
   {
     name: "Jack Foster",
     image: foster,
+    // url: "https://www.revengeof.com/pages/creator/jack-foster",
+  },
+  {
+    name: "Josh Gad",
+    image: gad,
+    // url: "https://www.revengeof.com/pages/creator/josh-gad",
+  },
+  {
+    name: "Patrick Horvath",
+    image: horvath,
+    // url: "https://www.revengeof.com/pages/creator/patrick-horvath",
   },
   {
     name: "Jody Houser",
     image: houser,
     url: "https://www.revengeof.com/pages/creator/jody-houser",
+  },
+  {
+    name: "Geoff Johns",
+    image: johns,
+    url: "https://www.revengeof.com/pages/creator/geoff-johns",
+  },
+  {
+    name: "Zach Kaplan",
+    image: kaplan,
+    url: "https://www.revengeof.com/pages/creator/zach-kaplan",
   },
   {
     name: "Daniel Kibblesmith",
@@ -64,6 +146,11 @@ export const creators: Creator[] = [
     url: "https://www.revengeof.com/pages/creator/scott-koblish",
   },
   {
+    name: "Alex Kurtzman",
+    image: kurtzman,
+    // url: "https://www.revengeof.com/pages/creator/alex-kurtzman",
+  },
+  {
     name: "Ed Luce",
     image: luce,
     url: "https://www.revengeof.com/pages/creator/ed-luce",
@@ -74,13 +161,39 @@ export const creators: Creator[] = [
     url: "https://www.revengeof.com/pages/creator/jackson-lanzing",
   },
   {
+    name: "Nicole Maines",
+    image: maines,
+    url: "https://www.revengeof.com/pages/creator/nicole-maines",
+  },
+  {
     name: "Hannah Rose May",
     image: may,
     url: "https://www.revengeof.com/pages/creator/hannah-rose-may",
   },
   {
+    name: "Rex Ogle",
+    image: ogle,
+    // url: "https://www.revengeof.com/pages/creator/rex-ogle",
+  },
+  {
     name: "David Pepose",
     image: pepose,
+    // url: "https://www.revengeof.com/pages/creator/david-pepose",
+  },
+  {
+    name: "Pornsak Pichetshote",
+    image: pichetshote,
+    url: "https://www.revengeof.com/pages/creator/pornsak-pichetshote",
+  },
+  {
+    name: "Sabir Pirzada",
+    image: pirzada,
+    url: "https://www.revengeof.com/pages/creator/sabir-pirzada",
+  },
+  {
+    name: "Brian Posehn",
+    image: posehn,
+    // url: "https://www.revengeof.com/pages/creator/brian-posehn",
   },
   {
     name: "Rick Remender",
@@ -88,13 +201,28 @@ export const creators: Creator[] = [
     url: "https://www.revengeof.com/pages/creator/rick-remender",
   },
   {
+    name: "Johnny Ryan",
+    image: ryan,
+    // url: "https://www.revengeof.com/pages/creator/johnny-ryan",
+  },
+  {
     name: "Tim Sheridan",
     image: sheridan,
     url: "https://www.revengeof.com/pages/creator/tim-sheridan",
   },
+  {
+    name: "Sean Tejaratchi",
+    image: tejaratchi,
+    // url: "https://www.revengeof.com/pages/creator/sean-tejaratchi",
+  },
+  {
+    name: "Mark Waid",
+    image: waid,
+    // url: "https://www.revengeof.com/pages/creator/mark-waid",
+  },
 ]
 
-export const CreatorItem = ({ name, image, url }: Creator) => {
+export const CreatorItem = ({ name, image, url, cohost }: Creator) => {
   const forwardRef = (url: string | undefined) => {
     if (url) window.open(url, "_blank")
   }
@@ -102,12 +230,11 @@ export const CreatorItem = ({ name, image, url }: Creator) => {
   return (
     <div
       onClick={() => forwardRef(url || undefined)}
-      className={clsx(
-        "aspect-square relative border-[#93193A] md:border-8 md:hover:scale-105 transition duration-700 opacity-95 rounded-sm hover:opacity-100",
-        {
-          "cursor-pointer": !!url,
-        }
-      )}
+      className={clsx("relative  md:hover:scale-105 transition duration-700", {
+        "cursor-pointer": !!url,
+        "aspect-square": !cohost,
+        "aspect-video col-span-2": cohost,
+      })}
     >
       <Image
         src={image}
@@ -118,9 +245,6 @@ export const CreatorItem = ({ name, image, url }: Creator) => {
           height: "auto",
         }}
       />
-      {/* <div className="absolute flex bottom-0 m-4">
-        <h2 className="creator-header">{name}</h2>
-      </div> */}
     </div>
   )
 }
@@ -130,8 +254,31 @@ export default function Creators() {
     <div className="w-full">
       <h4 className="creator-header text-center my-8">Co-Hosts &amp; Creators</h4>
       <div className="grid md:grid-cols-4 grid-cols-2 md:gap-4 transition-all">
-        <div className="bg-red-400 col-span-2 aspect-video">Patton photo</div>
-        <div className="bg-yellow-300 col-span-2 aspect-video">Jordan photo</div>
+        {cohosts.map(cohost => (
+          <CreatorItem key={cohost.name} {...cohost} />
+        ))}
+        {/* <div className="col-span-2 aspect-video">
+          <Image
+            src={patton}
+            alt={`Creator and Co-Host: Patton Oswalt`}
+            sizes="100vw"
+            style={{
+              width: "100%",
+              height: "auto",
+            }}
+          />
+        </div>
+        <div className="col-span-2 aspect-video">
+          <Image
+            src={blum}
+            alt={`Creator and Co-Host: Jordan Blum`}
+            sizes="100vw"
+            style={{
+              width: "100%",
+              height: "auto",
+            }}
+          />
+        </div> */}
       </div>
       <h4 className="creator-header text-center my-8">Creators</h4>
       <div className="grid md:grid-cols-4 grid-cols-2 md:gap-4 transition-all">
