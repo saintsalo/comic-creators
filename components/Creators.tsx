@@ -33,7 +33,7 @@ import remender from "../images/creators/CCBP_CreatorImage_RickRemender.jpg"
 import ryan from "../images/creators/CCBP_CreatorImage_JohnnyRyan.jpg"
 import sheridan from "../images/creators/CCBP_CreatorImage_TimSheridan.jpg"
 import tejaratchi from "../images/creators/CCBP_CreatorImage_SeanTejaratchi.jpg"
-import waid from "../images/creators/CCBP_CreatorImage_MarkWaid.jpg"
+import waid from "../images/creators/CCBP_CreatorImage_MarKWaid.jpg"
 
 import clsx from "clsx"
 
