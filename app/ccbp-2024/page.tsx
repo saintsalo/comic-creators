@@ -36,7 +36,6 @@ export default function Home() {
       <div className="content flex flex-col gap-8">
         <Newsletter />
       </div>
-      <CCBP2023 />
       <div className="max-w-7xl">
         <Image
           src={creatorsImage}
@@ -47,6 +46,7 @@ export default function Home() {
         />
       </div>
       <Creators />
+      <CCBP2023 />
     </div>
   )
 }
