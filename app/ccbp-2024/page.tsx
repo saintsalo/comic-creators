@@ -7,6 +7,7 @@ import Newsletter from "@/components/Newsletter"
 import SaveDate from "@/components/SaveDate"
 import CCBP2023 from "@/components/CCBP2023"
 import CCBP2024Content from "@/components/CCBP2024Content"
+import CCBP2024Video from "@/components/CCBP2024Video"
 
 export default function Home() {
   return (
@@ -33,6 +34,7 @@ export default function Home() {
       <div className="content w-full">
         <CCBP2024Content />
       </div>
+      <CCBP2024Video />
       <div className="content flex flex-col gap-8">
         <Newsletter />
       </div>
