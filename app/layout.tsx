@@ -22,7 +22,6 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${roboto_init.className} ${anton_init.variable} antialiased`}>
         {process.env.NODE_ENV === "production" ? <GoogleAnalytics gaId="G-3PJ2SP5PVW" /> : null}
-        <GoogleAnalytics gaId="G-3PJ2SP5PVW" />
         <Script
           id="klaviyo"
           type="text/javascript"
