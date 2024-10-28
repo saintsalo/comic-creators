@@ -1,13 +1,14 @@
 import Image from "next/image"
 import ccbpLogo from "@/images/CCBP_LogoGraphic-full.png"
 import roLogo from "@/images/revenge-of-logo.png"
-import creatorsImage from "@/images/creatorsList.png"
+import creatorsImage from "@/images/CCBP_2024_Schedule_Web.png"
 import Creators from "@/components/Creators"
 import Newsletter from "@/components/Newsletter"
 import SaveDate from "@/components/SaveDate"
 import CCBP2023 from "@/components/CCBP2023"
 import CCBP2024Content from "@/components/CCBP2024Content"
 import CCBP2024Video from "@/components/CCBP2024Video"
+import CCBPRSVP from "@/components/CCBPRSVP"
 
 export default function Home() {
   return (
@@ -38,7 +39,7 @@ export default function Home() {
       <div className="content flex flex-col gap-8">
         <Newsletter />
       </div>
-      <div className="max-w-7xl">
+      <div className="max-w-7xl lg:-mb-12">
         <Image
           src={creatorsImage}
           alt="Comic Creators Block Party Creators List"
@@ -47,6 +48,10 @@ export default function Home() {
           sizes="100vw"
         />
       </div>
+      <div className="max-w-7xl w-full">
+        <CCBPRSVP />
+      </div>
+
       <CCBP2023 />
       <Creators />
     </div>

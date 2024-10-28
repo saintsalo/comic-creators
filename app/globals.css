@@ -30,6 +30,10 @@ body {
     font-size: 1rem;
   }
 
+  a {
+    @apply font-anton text-[#931136]
+  }
+
   h1, h2, h3, h4, h5, h6 {
     @apply font-anton tracking-normal capitalize;
   }
@@ -84,6 +88,10 @@ body {
 
   .creator-position {
     @apply absolute bottom-0 left-0
+  }
+
+  .register-button {
+    @apply md:text-xl p-4 text-sm md:border-4 border-2 border-[#931136] text-[#931136] bg-[#F4EB87] rounded-lg hover:opacity-90 transition-all md:font-bold font-thin
   }
 }
 
