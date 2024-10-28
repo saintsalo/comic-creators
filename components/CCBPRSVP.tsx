@@ -21,7 +21,7 @@ export default function CCBPRSVP() {
           Panel B Adapting
         </a>
         <a
-          href="https://ccbp24-panel-c-actor-writ.rsvpify.com/?securityToken=tdeafLNzz7MA42SHjMVcQTEkl6xXBGOL"
+          href="https://ccbp24-podcast-jjg.rsvpify.com/?securityToken=ZV870eaFPlQoipEm987E3fXwaJva0Pjk"
           target="_blank"
           rel="noreferrer"
           className="underline whitespace-nowrap hover:opacity-90 transition-all duration-500"
@@ -29,7 +29,7 @@ export default function CCBPRSVP() {
           Panel C Live Podcast
         </a>
         <a
-          href="https://ccbp24-podcast-jjg.rsvpify.com/?securityToken=ZV870eaFPlQoipEm987E3fXwaJva0Pjk"
+          href="https://ccbp24-panel-c-actor-writ.rsvpify.com/?securityToken=tdeafLNzz7MA42SHjMVcQTEkl6xXBGOL"
           target="_blank"
           rel="noreferrer"
           className="underline whitespace-nowrap hover:opacity-90 transition-all duration-500"
