@@ -1,0 +1,33 @@
+:root {
+  --background: #a5d0e6;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #a5d0e6;
+    --foreground: #171717;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  @apply font-anton text-[#931136];
+}
+
+.content {
+  @apply text-[#931136];
+}
+
+.register-button {
+  @apply border-[#931136] text-[#931136] bg-[#F4EB87];
+}
+
+.creator-header {
+  @apply text-[#F6ED89];
+}

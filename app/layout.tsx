@@ -1,6 +1,6 @@
 import type { Metadata } from "next"
 import { anton_init, roboto_init } from "@/fonts"
-import "./globals.css"
+import "@/styles/globals.css"
 import Script from "next/script"
 import { GoogleAnalytics } from "@next/third-parties/google"
 
@@ -25,9 +25,7 @@ export default function RootLayout({
           src={`//static.klaviyo.com/onsite/js/klaviyo.js?company_id=ULWpL7`}
           async
         />
-        <div className="bg-[url('../images/background-footer.png')] bg-no-repeat bg-bottom ">
-          {children}
-        </div>
+        {children}
       </body>
     </html>
   )

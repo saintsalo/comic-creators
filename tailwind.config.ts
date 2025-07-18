@@ -18,6 +18,7 @@ const config: Config = {
       },
       fontFamily: {
         anton: "var(--font-anton)",
+        rofont: ["ROFont", "Arial", "sans-serif"],
       },
     },
   },

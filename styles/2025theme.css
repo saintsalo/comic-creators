@@ -1,0 +1,37 @@
+:root {
+  --background: #193136;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0c888e;
+    --foreground: #171717;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  @apply text-[#FFFFFF];
+}
+
+h1 {
+  @apply font-rofont text-[#BED944] text-xl leading-7 sm:text-2xl sm:leading-8 md:text-[32px] md:leading-9 lg:text-[36px] lg:leading-10 xl:text-[40px] xl:leading-[44px];
+}
+
+.content {
+  @apply text-[#FFFFFF] lg:text-lg md:text-lg text-lg;
+}
+
+.primary-button {
+  @apply text-[#BED944] bg-[#0c888e] rounded-md px-6 py-2 text-2xl font-extrabold;
+}
+
+.creator-header {
+  @apply text-[#BED944];
+}
