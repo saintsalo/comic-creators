@@ -11,7 +11,7 @@ export default function Home() {
         <div className="w-full max-w-6xl">
           <Image
             src={ccbpLogo}
-            alt="Comic Creators Block Party"
+            alt="Comic Creators Block Party 2025, November 8th"
             style={{ objectFit: "cover", width: "100%", height: "auto" }}
             sizes="100vw"
             priority
