@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "ROFont";
+  src: url("/fonts/RevengeOfReguler.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ROFont";
+  src: url("/fonts/RevengeOfBold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ROFont";
+  src: url("/fonts/RevengeOfItalic.woff2") format("woff2");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@layer base {
+  html {
+    font-size: 20px;
+  }
+
+  body {
+    font-size: 1rem;
+  }
+
+  a {
+    @apply font-anton;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-anton tracking-normal capitalize;
+  }
+
+  /* h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    font-weight: 400;
+    font-style: normal;
+    color: #000;
+    line-height: 1.2em;
+    letter-spacing: 0px;
+    text-transform: capitalize;
+  } */
+
+  h1 {
+    @apply md:text-[2rem] text-[1rem];
+  }
+
+  h2 {
+    @apply md:text-[1.5rem] text-[.75rem];
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+
+  h5 {
+    font-size: 0.875rem;
+  }
+
+  h6 {
+    font-size: 0.75rem;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .content {
+    @apply mx-auto max-w-7xl px-4  lg:text-xl md:text-xl text-sm;
+  }
+
+  .creator-position {
+    @apply absolute bottom-0 left-0;
+  }
+
+  .register-button {
+    @apply md:text-xl p-4 text-sm md:border-4 border-2 rounded-lg hover:opacity-90 transition-all md:font-bold font-thin;
+  }
+}

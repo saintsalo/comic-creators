@@ -1,5 +1,5 @@
 import Image from "next/image"
-import std from "@/images/save-the-date.png"
+import std from "@/images/2024/save-the-date.png"
 import Flip from "@/components/Flip"
 import dayjs from "dayjs"
 import utc from "dayjs/plugin/utc"
@@ -12,7 +12,7 @@ const SaveDate = () => {
   const timestamp = targetDate.valueOf()
   return (
     <div className="w-full">
-      <div className="bg-[url('../images/background-orange.png')] bg-cover text-[#931136] bg-left  border-[#931136] md:border-[10px] md:rounded-[35px]  p-8 m-2 border-4 rounded-md">
+      <div className="bg-[url('../images/2024/background-orange.png')] bg-cover text-[#931136] bg-left  border-[#931136] md:border-[10px] md:rounded-[35px]  p-8 m-2 border-4 rounded-md">
         <div className="grid lg:grid-cols-2 grid-cols-1 gap-4 items-center w-full">
           <div className="flex flex-col gap-4">
             <Image
