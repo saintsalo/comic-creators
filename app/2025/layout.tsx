@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
 import "@/styles/2025theme.css"
+import "@/styles/embla.css"
 
 export const metadata: Metadata = {
   title: "Comic Creators Block Party 2025",
