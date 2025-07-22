@@ -51,7 +51,11 @@ export const PrevButton: React.FC<PropType> = props => {
   const { children, ...restProps } = props
 
   return (
-    <button className="embla__button embla__button--prev" type="button" {...restProps}>
+    <button
+      className="embla__button embla__button--prev md:w-6 md:h-6 w-4 h-4"
+      type="button"
+      {...restProps}
+    >
       <svg className="embla__button__svg" viewBox="0 0 532 532">
         <path
           fill="#bed944"
@@ -67,7 +71,11 @@ export const NextButton: React.FC<PropType> = props => {
   const { children, ...restProps } = props
 
   return (
-    <button className="embla__button embla__button--next" type="button" {...restProps}>
+    <button
+      className="embla__button embla__button--next md:w-6 md:h-6 w-4 h-4"
+      type="button"
+      {...restProps}
+    >
       <svg className="embla__button__svg" viewBox="0 0 532 532">
         <path
           fill="#bed944"

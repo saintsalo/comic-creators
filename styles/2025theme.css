@@ -21,15 +21,15 @@ a {
 }
 
 h1 {
-  @apply font-rofont text-[#BED944] text-xl leading-7 sm:text-2xl sm:leading-8 md:text-[32px] md:leading-9 lg:text-[36px] lg:leading-10 xl:text-[40px] xl:leading-[44px];
+  @apply font-rofont text-[#BED944] text-lg leading-7 sm:text-2xl sm:leading-8 md:text-[32px] md:leading-9 lg:text-[36px] lg:leading-10 xl:text-[40px] xl:leading-[44px];
 }
 
 .content {
-  @apply text-[#FFFFFF] lg:text-lg md:text-lg text-lg;
+  @apply text-[#FFFFFF] lg:text-lg md:text-lg text-base;
 }
 
 .primary-button {
-  @apply text-[#BED944] bg-[#0c888e] rounded-md px-6 py-2 text-2xl font-extrabold;
+  @apply text-[#BED944] bg-[#0c888e] rounded-md px-4 py-2 lg:text-2xl font-extrabold text-sm;
 }
 
 .creator-header {
