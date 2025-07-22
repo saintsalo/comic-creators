@@ -7,7 +7,7 @@ interface Props {
 
 export default function EmbedVideo({ header, url, borderColor = "#FFFFFF", subtitle }: Props) {
   return (
-    <div className="w-full lg:p-0 max-w-[1350px] lg:mb-8 p-2">
+    <div className="w-full max-w-[1350px] lg:mb-8 p-2">
       {header && <h4 className="creator-header text-center my-8">{header}</h4>}
       <div className="w-full">
         <iframe
