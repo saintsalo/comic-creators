@@ -8,7 +8,7 @@ const nextConfig = {
       // Redirect to current CCBP year
       {
         source: '/',
-        destination: '/2024',
+        destination: '/2025',
         permanent: true,
       },
       {
