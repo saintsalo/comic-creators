@@ -25,7 +25,7 @@ const EmblaCarousel: React.FC<PropType> = props => {
     usePrevNextButtons(emblaApi)
 
   return (
-    <section className="embla p-4">
+    <section className="embla">
       <div
         className="embla__viewport lg:border-[10px] border-2 border-[#0C888E] lg:rounded-[15px] rounded-md aspect-video w-[100%]"
         ref={emblaRef}
@@ -41,13 +41,13 @@ const EmblaCarousel: React.FC<PropType> = props => {
         </div>
       </div>
 
-      <div className="embla__controls px-4">
-        <div className="embla__buttons">
+      <div className="embla__controls md:mr-4 flex flex-row items-center justify-between">
+        <div className="flex flex-row items-center gap-4 m-4 justify-center">
           <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
           <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
         </div>
 
-        <div className="embla__dots">
+        <div className="embla__dots hidden md:flex md:flex-wrap md:justify-end md:items-center">
           {scrollSnaps.map((_, index) => (
             <DotButton
               key={index}

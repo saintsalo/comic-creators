@@ -98,7 +98,7 @@ const SLIDES = [
 export default function Home() {
   return (
     <div className="bg-[url('../images/2025/background_test.png')] bg-repeat bg-top">
-      <div className="grid md:min-h-screen justify-items-center m-auto max-w-[1600px] transition gap-8 lg:gap-6 pb-[350px]">
+      <div className="grid md:min-h-screen justify-items-center m-auto max-w-[1600px] transition gap-4 lg:gap-6 pb-[350px] w-full">
         <div className="w-full max-w-6xl">
           <Image
             src={ccbpLogo}
@@ -108,20 +108,22 @@ export default function Home() {
             priority
           />
         </div>
-        <PromoOverview2025 />
+        <div className="w-full max-w-[1200px]">
+          <PromoOverview2025 />
+        </div>
 
         <EmbedVideo
           url="https://www.youtube.com/embed/Yyk-vpSr-1c?si=peVlyplObjcL5OJV"
           borderColor="#0C888E"
           subtitle="Comic Creator Block Party 2025 - Coming November 8th"
         />
-        <div className="w-full max-w-6xl">
-          <h1 className="text-3xl font-bold text-center mb-8">
+        <div className="w-full max-w-6xl p-2">
+          <h1 className="font-bold text-center lg:mb-2">
             Comic Creators Block Party 2024 Highlights
           </h1>
           <EmblaCarousel slides={SLIDES} options={OPTIONS} />
         </div>
-        <div className="content flex flex-col gap-8 mt-20 border-t-2 border-[#0C888E] pt-8">
+        <div className="mt-12 w-full max-w-[300px] sm:max-w-full lg:max-w-[800px] m-auto">
           <Newsletter />
         </div>
       </div>
