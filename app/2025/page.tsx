@@ -1,7 +1,8 @@
 import Image from "next/image"
-import ccbpLogo from "@/images/2025/CCBP25_LogoAnnounceGraphic_webpage.png"
+import ccbpLogo from "@/images/2025/CCBP25_header.png"
+import ccbpLineup from "@/images/2025/CCBP25_Lineup.png"
+import ccbpCouch from "@/images/2025/CCBP25_CouchParty.png"
 import Newsletter from "@/components/Newsletter"
-import PromoOverview2025 from "@/components/PromoOverview2025"
 import EmbedVideo from "@/components/EmbedVideo"
 import { EmblaOptionsType } from "embla-carousel"
 import EmblaCarousel from "@/components/EmblaCarousel"
@@ -108,9 +109,27 @@ export default function Home() {
             priority
           />
         </div>
-        <div className="w-full max-w-[1200px]">
-          <PromoOverview2025 />
+        <div className="w-full">
+          <Image
+            src={ccbpLineup}
+            alt="Comic Creators Block Party 2025 Creator Lineup"
+            style={{ objectFit: "cover", width: "100%", height: "auto" }}
+            sizes="100vw"
+            priority
+          />
         </div>
+        <div className="w-full">
+          <Image
+            src={ccbpCouch}
+            alt="Comic Creators Block Party 2025 Creator Lineup"
+            style={{ objectFit: "cover", width: "100%", height: "auto" }}
+            sizes="100vw"
+            priority
+          />
+        </div>
+        {/* <div className="w-full max-w-[1200px]">
+          <PromoOverview2025 />
+        </div> */}
 
         <EmbedVideo
           url="https://www.youtube.com/embed/Yyk-vpSr-1c?si=peVlyplObjcL5OJV"
