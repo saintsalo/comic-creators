@@ -98,7 +98,7 @@ const SLIDES = [
 
 export default function Home() {
   return (
-    <div className="bg-[url('../images/2025/background_test.png')] bg-repeat bg-top">
+    <div className="bg-[url('../images/2025/CCBP25_background.png')] md:bg-[url('../images/2025/background.png')] bg-repeat bg-[length:100%_auto] md:bg-[length:50%_auto] lg:bg-[length:33%_auto] bg-top">
       <div className="grid md:min-h-screen justify-items-center m-auto max-w-[1600px] transition gap-4 lg:gap-6 pb-[350px] w-full">
         <div className="w-full max-w-6xl">
           <Image
