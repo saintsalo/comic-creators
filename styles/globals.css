@@ -100,3 +100,12 @@
     @apply md:text-xl p-4 text-sm md:border-4 border-2 rounded-lg hover:opacity-90 transition-all md:font-bold font-thin;
   }
 }
+
+@layer utilities {
+  .imgmap-responsive[usemap] {
+    max-width: 100%;
+    height: auto;
+    display: block; /* avoids inline-image baseline gap */
+    pointer-events: auto; /* ensure clicks aren’t blocked */
+  }
+}

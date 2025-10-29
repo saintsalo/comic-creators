@@ -32,6 +32,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
+    "**/*.d.ts",
     ".next/types/**/*.ts",
     "components/Flip.jsx",
     ".next/dev/types/**/*.ts"
