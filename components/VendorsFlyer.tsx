@@ -1,15 +1,36 @@
 "use client"
 
 import { useEffect, useRef } from "react"
-import imageMapResize from "image-map-resizer"
 import flyer from "@/images/2025/Vendors_CCBP25_Flyer.jpg"
 
 export default function VendorFlyer() {
   const imgRef = useRef<HTMLImageElement>(null)
 
+  // Dynamically import the image-map-resizer only on the client after mount.
+  // The package accesses `window`/`document` at module-top-level which breaks
+  // Next.js prerendering when imported statically. Dynamic import inside
+  // useEffect ensures it's only evaluated in the browser.
   useEffect(() => {
-    // run once on mount (in case image is already cached)
-    imageMapResize()
+    let mounted = true
+
+    const run = async () => {
+      try {
+        const mod = await import("image-map-resizer")
+        const fn = (mod && (mod.default ?? mod)) as unknown as () => void
+        if (mounted && typeof fn === "function") fn()
+      } catch (err) {
+        // ignore - if the import fails during build or in weird environments
+        // we don't want to crash the app; the image map will just not resize.
+        // eslint-disable-next-line no-console
+        console.warn("image-map-resizer import failed:", err)
+      }
+    }
+
+    run()
+
+    return () => {
+      mounted = false
+    }
   }, [])
 
   return (
@@ -23,7 +44,15 @@ export default function VendorFlyer() {
         height={flyer.height} // 2000
         useMap="#vendor-map"
         className="w-full h-auto rounded-lg"
-        onLoad={() => imageMapResize()} // recalc when the image is ready
+        onLoad={async () => {
+          try {
+            const mod = await import("image-map-resizer")
+            const fn = (mod && (mod.default ?? mod)) as unknown as () => void
+            if (typeof fn === "function") fn()
+          } catch (err) {
+            /* ignore */
+          }
+        }} // recalc when the image is ready
       />
 
       <map id="vendor-map" name="vendor-map">

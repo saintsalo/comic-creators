@@ -5,7 +5,7 @@ import ccbpCouch from "@/images/2025/CCBP25_CouchParty.png"
 import Newsletter from "@/components/Newsletter"
 import EmbedVideo from "@/components/EmbedVideo"
 import VendorsFlyer from "@/components/VendorsFlyer"
-import { EmblaOptionsType } from "embla-carousel"
+import type { EmblaOptionsType } from "embla-carousel"
 import EmblaCarousel from "@/components/EmblaCarousel"
 
 const OPTIONS: EmblaOptionsType = {
