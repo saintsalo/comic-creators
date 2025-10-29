@@ -4,6 +4,7 @@ import ccbpLineup from "@/images/2025/CCBP25_Lineup.png"
 import ccbpCouch from "@/images/2025/CCBP25_CouchParty.png"
 import Newsletter from "@/components/Newsletter"
 import EmbedVideo from "@/components/EmbedVideo"
+import VendorsFlyer from "@/components/VendorsFlyer"
 import { EmblaOptionsType } from "embla-carousel"
 import EmblaCarousel from "@/components/EmblaCarousel"
 
@@ -126,6 +127,9 @@ export default function Home() {
             sizes="100vw"
             priority
           />
+        </div>
+        <div className="w-full max-w-6xl">
+          <VendorsFlyer />
         </div>
         {/* <div className="w-full max-w-[1200px]">
           <PromoOverview2025 />

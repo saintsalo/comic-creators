@@ -12,6 +12,7 @@
     "@leenguyen/react-flip-clock-countdown": "^1.6.0",
     "@next/third-parties": "16.0.0",
     "embla-carousel-react": "^8.6.0",
+    "image-map-resizer": "^1.0.10",
     "next": "16.0.0",
     "react": "19.2.0",
     "react-dom": "19.2.0",
