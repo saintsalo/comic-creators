@@ -1,6 +1,6 @@
 import Image from "next/image"
 import ccbpLogo from "@/images/2025/CCBP25_header.png"
-import ccbpLineup from "@/images/2025/CCBP25_Lineup.png"
+import ccbpLineup from "@/images/2025/CCBP25_FullSchedule_Web.png"
 import ccbpCouch from "@/images/2025/CCBP25_CouchParty.png"
 import Newsletter from "@/components/Newsletter"
 import EmbedVideo from "@/components/EmbedVideo"
