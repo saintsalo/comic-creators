@@ -21,7 +21,6 @@ export default function VendorFlyer() {
       } catch (err) {
         // ignore - if the import fails during build or in weird environments
         // we don't want to crash the app; the image map will just not resize.
-        // eslint-disable-next-line no-console
         console.warn("image-map-resizer import failed:", err)
       }
     }

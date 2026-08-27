@@ -1,7 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ['www.revengeof.com'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'www.revengeof.com',
+        pathname: '/**',
+      },
+    ],
   },
   async redirects() {
     return [
