@@ -7,7 +7,7 @@ import ROTVLive2026 from "@/components/ROTVLive2026"
 export default function Home() {
   return (
     <div className="bg-[url('../images/2026/CCBP26_background.jpg')] bg-repeat bg-[length:100%_auto] md:bg-[length:50%_auto] bg-top">
-      <div className="grid grid-cols-1 md:min-h-screen justify-items-center m-auto max-w-6xl gap-6 lg:gap-10 px-1 md:px-4 pt-1 md:pt-4 pb-16 w-full">
+      <div className="grid grid-cols-1 md:min-h-screen justify-items-center m-auto max-w-6xl gap-6 lg:gap-10 px-3 md:px-4 pt-3 md:pt-4 pb-16 w-full">
         <div className="w-full flex flex-col gap-2 lg:gap-5">
           <Image
             src={ccbpHeader}
