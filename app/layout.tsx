@@ -7,7 +7,7 @@ import { GoogleAnalytics } from "@next/third-parties/google"
 export const metadata: Metadata = {
   title: "Comic Creators Block Party",
   description:
-    "Comic Creators Block Party at Revenge Of November 2, 2024 with Co-Hosts Patton Oswalt and Jordan Blum.",
+    "Comic Creators Block Party at Revenge Of November 7, 2026 with Co-Hosts Patton Oswalt and Jordan Blum.",
 }
 
 export default function RootLayout({

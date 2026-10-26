@@ -1,0 +1,22 @@
+:root {
+  --background: #343535;
+  --foreground: #171717;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  @apply text-[#FFFFFF];
+}
+
+h1 {
+  @apply font-rofont font-bold text-[#cc5343] text-2xl leading-8 sm:text-3xl md:text-[40px] md:leading-[44px] lg:text-[48px] lg:leading-[52px];
+}
+
+.content {
+  @apply text-[#FFFFFF] lg:text-lg md:text-lg text-base;
+}
