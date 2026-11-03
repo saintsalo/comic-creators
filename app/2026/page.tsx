@@ -1,6 +1,7 @@
 import Image from "next/image"
 import ccbpHeader from "@/images/2026/CCBP26_header.png"
 import ccbpSchedule from "@/images/2026/CCBP26_SigningSchedule.png"
+import ccbpLiveSchedule from "@/images/2026/CCBP26_LiveSchedule.png"
 import revengeOfLogo from "@/images/2026/RevengeOf_LogoAddress.png"
 import ROTVLive2026 from "@/components/ROTVLive2026"
 
@@ -24,8 +25,14 @@ export default function Home() {
             priority
           />
         </div>
-        <div className="w-full">
+        <div className="w-full flex flex-col gap-2 lg:gap-5">
           <ROTVLive2026 />
+          <Image
+            src={ccbpLiveSchedule}
+            alt="Comic Creators Block Party 2026 Live Interview Schedule"
+            style={{ width: "100%", height: "auto" }}
+            sizes="(max-width: 1200px) 100vw, 1200px"
+          />
         </div>
         <a
           href="https://www.revengeof.com"
