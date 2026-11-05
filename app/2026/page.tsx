@@ -1,6 +1,7 @@
 import Image from "next/image"
 import ccbpHeader from "@/images/2026/CCBP26_header.png"
 import ccbpSchedule from "@/images/2026/CCBP26_SigningSchedule.png"
+import ccbpFaq from "@/images/2026/CCBP26_FAQ.png"
 import revengeOfLogo from "@/images/2026/RevengeOf_LogoAddress.png"
 import ROTVLive2026 from "@/components/ROTVLive2026"
 import LiveSchedule2026 from "@/components/LiveSchedule2026"
@@ -23,6 +24,12 @@ export default function Home() {
             style={{ width: "100%", height: "auto" }}
             sizes="(max-width: 1200px) 100vw, 1200px"
             priority
+          />
+          <Image
+            src={ccbpFaq}
+            alt="Comic Creators Block Party 2026 FAQ"
+            style={{ width: "100%", height: "auto" }}
+            sizes="(max-width: 1200px) 100vw, 1200px"
           />
         </div>
         <div className="w-full flex flex-col gap-2 lg:gap-5">
